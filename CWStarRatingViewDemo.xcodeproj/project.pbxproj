@@ -14,6 +14,9 @@
 		7FE671FB1A0E63A400E2D872 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE671FA1A0E63A400E2D872 /* Images.xcassets */; };
 		7FE671FE1A0E63A400E2D872 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE671FC1A0E63A400E2D872 /* LaunchScreen.xib */; };
 		7FE6720A1A0E63A400E2D872 /* CWStarRatingViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE672091A0E63A400E2D872 /* CWStarRatingViewDemoTests.m */; };
+		7FE672151A0E63B700E2D872 /* CWStarRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE672141A0E63B700E2D872 /* CWStarRateView.m */; };
+		7FE672191A0E644500E2D872 /* b27_icon_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE672171A0E644500E2D872 /* b27_icon_star_gray@2x.png */; };
+		7FE6721A1A0E644500E2D872 /* b27_icon_star_yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE672181A0E644500E2D872 /* b27_icon_star_yellow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		7FE672031A0E63A400E2D872 /* CWStarRatingViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWStarRatingViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE672081A0E63A400E2D872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FE672091A0E63A400E2D872 /* CWStarRatingViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWStarRatingViewDemoTests.m; sourceTree = "<group>"; };
+		7FE672131A0E63B700E2D872 /* CWStarRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStarRateView.h; sourceTree = "<group>"; };
+		7FE672141A0E63B700E2D872 /* CWStarRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStarRateView.m; sourceTree = "<group>"; };
+		7FE672171A0E644500E2D872 /* b27_icon_star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_gray@2x.png"; sourceTree = "<group>"; };
+		7FE672181A0E644500E2D872 /* b27_icon_star_yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b27_icon_star_yellow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		7FE671EC1A0E63A400E2D872 /* CWStarRatingViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7FE672161A0E642C00E2D872 /* CWStarRateView */,
 				7FE671F11A0E63A400E2D872 /* AppDelegate.h */,
 				7FE671F21A0E63A400E2D872 /* AppDelegate.m */,
 				7FE671F41A0E63A400E2D872 /* ViewController.h */,
@@ -117,6 +125,17 @@
 				7FE672081A0E63A400E2D872 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE672161A0E642C00E2D872 /* CWStarRateView */ = {
+			isa = PBXGroup;
+			children = (
+				7FE672171A0E644500E2D872 /* b27_icon_star_gray@2x.png */,
+				7FE672181A0E644500E2D872 /* b27_icon_star_yellow@2x.png */,
+				7FE672131A0E63B700E2D872 /* CWStarRateView.h */,
+				7FE672141A0E63B700E2D872 /* CWStarRateView.m */,
+			);
+			name = CWStarRateView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE672191A0E644500E2D872 /* b27_icon_star_gray@2x.png in Resources */,
+				7FE6721A1A0E644500E2D872 /* b27_icon_star_yellow@2x.png in Resources */,
 				7FE671F91A0E63A400E2D872 /* Main.storyboard in Resources */,
 				7FE671FE1A0E63A400E2D872 /* LaunchScreen.xib in Resources */,
 				7FE671FB1A0E63A400E2D872 /* Images.xcassets in Resources */,
@@ -221,6 +242,7 @@
 			files = (
 				7FE671F61A0E63A400E2D872 /* ViewController.m in Sources */,
 				7FE671F31A0E63A400E2D872 /* AppDelegate.m in Sources */,
+				7FE672151A0E63B700E2D872 /* CWStarRateView.m in Sources */,
 				7FE671F01A0E63A400E2D872 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

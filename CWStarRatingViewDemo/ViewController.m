@@ -8,7 +8,12 @@
 
 #import "ViewController.h"
 
+#import "ViewController.h"
+#import "CWStarRateView.h"
+
 @interface ViewController ()
+
+@property (strong, nonatomic) CWStarRateView *starRateView;
 
 @end
 
@@ -16,12 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.starRateView = [[CWStarRateView alloc] initWithFrame:CGRectMake(10, 100, 300, 40) numberOfStars:5];
+    self.starRateView.scorePercent = 0.3;
+    self.starRateView.allowIncompleteStar = YES;
+    self.starRateView.hasAnimation = YES;
+    [self.view addSubview:self.starRateView];
 }
 
 @end
