@@ -115,7 +115,7 @@
     }
     
     if ([self.delegate respondsToSelector:@selector(starRateView:scroePercentDidChange:)]) {
-        [self.delegate starRateView:self scroePercentDidChange:scroePercent];
+        [self.delegate starRateView:self scroePercentDidChange:_scorePercent];
     }
     
     [self setNeedsLayout];
